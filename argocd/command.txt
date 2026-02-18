@@ -1,0 +1,6 @@
+1. kubectl create namespace argocd
+2. kubectl apply -n argocd --server-side --force-conflicts -f argocd-install.yaml
+
+3. port forward argocd server
+4. Get password: kubectl -n argocd get secret argocd-initial-admin-secret \
+  -o jsonpath="{.data.password}" | base64 -d && echo
