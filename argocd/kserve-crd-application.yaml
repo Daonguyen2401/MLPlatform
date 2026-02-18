@@ -8,7 +8,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: REPLACE_WITH_YOUR_GIT_REPO_URL
+    # Argo CD UI: dùng cùng repo Git và revision mà bạn đã cấu hình
+    repoURL: https://github.com/Daonguyen2401/MLPlatform.git
     targetRevision: HEAD
     path: kserve-crd
     helm:
