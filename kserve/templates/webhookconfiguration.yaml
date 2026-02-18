@@ -4,7 +4,7 @@ kind: MutatingWebhookConfiguration
 metadata:
   name: inferenceservice.serving.kserve.io
   annotations:
-    cert-manager.io/inject-ca-from: {{ .Release.Namespace }}/serving-cert
+    # cert-manager.io/inject-ca-from: {{ .Release.Namespace }}/serving-cert
 webhooks:
   - clientConfig:
       service:

@@ -95,7 +95,7 @@ kserve:
     enablePrometheusScraping: "false"
   controller:
     # -- KServe deployment mode: "Standard", "Knative".
-    deploymentMode: "Knative"
+    deploymentMode: "Standard"
 
     # -- KServe controller manager rbac proxy contrainer image
     rbacProxyImage: quay.io/brancz/kube-rbac-proxy:v0.18.0
@@ -176,7 +176,7 @@ kserve:
       disableIstioVirtualHost: false
 
       # -- Whether to disable ingress creation for RawDeployment mode.
-      disableIngressCreation: false
+      disableIngressCreation: true
 
       localGateway:
         # -- localGateway specifies the gateway which handles the network traffic within the cluster.
