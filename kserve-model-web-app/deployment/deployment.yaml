@@ -23,9 +23,13 @@ spec:
         name: kserve-models-web-app
         env:
         - name: APP_PREFIX
-          value: "/models"
+          value: "/"
         - name: APP_VERSION
           value: "v1beta1"
+        - name: APP_DISABLE_AUTH
+          value: "True"
+        - name: APP_SECURE_COOKIES
+          value: "False"
         ports:
         - containerPort: 5000
           name: http
