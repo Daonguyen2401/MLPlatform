@@ -192,7 +192,7 @@ kserve:
       # -- ingressGateway specifies the gateway which handles the network traffic from outside the cluster.
       ingressGateway:
         # -- enableGatewayApi controls whether to use the Gateway API for ingress routing instead of kuberetes Ingress.
-        enableGatewayApi: false
+        enableGatewayApi: true
         # -- kserveGateway specifies the name and namespace of the Gateway which handles the network traffic from outside the cluster.
         # This is only used when Gateway API is enabled. The gateway should be specified in format <gateway namespace>/<gateway name>
         kserveGateway: kserve/kserve-ingress-gateway
