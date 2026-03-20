@@ -160,7 +160,7 @@ kserve:
 
     gateway:
       # -- Ingress domain for RawDeployment mode, for Serverless it is configured in Knative.
-      domain: example.com
+      domain: 192.168.49.2.sslip.io
 
       # -- Optional additional domains for ingress routing.
       additionalIngressDomains: []
@@ -176,7 +176,7 @@ kserve:
       disableIstioVirtualHost: false
 
       # -- Whether to disable ingress creation for RawDeployment mode.
-      disableIngressCreation: true
+      disableIngressCreation: false
 
       localGateway:
         # -- localGateway specifies the gateway which handles the network traffic within the cluster.
