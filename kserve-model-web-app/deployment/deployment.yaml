@@ -18,7 +18,7 @@ spec:
         seccompProfile:
           type: RuntimeDefault
       containers:
-      - image: daonguyen24/kserve-models-web-app:v0.15.0
+      - image: daonguyen24/kserve-models-web-app:v0.15.1
         imagePullPolicy: Always
         name: kserve-models-web-app
         env:
