@@ -1,0 +1,16 @@
+apiVersion: gateway.envoyproxy.io/v1alpha1
+kind: EnvoyProxy
+metadata:
+  name: envoy-proxy
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app.kubernetes.io/name: envoy-proxy
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/component: gateway
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    helm.sh/chart: {{ include "eg.chart" . }}
+spec:
+  provider:
+    kubernetes:
+      service:
+        type: NodePort
