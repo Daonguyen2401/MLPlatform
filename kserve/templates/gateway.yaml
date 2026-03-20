@@ -27,3 +27,5 @@ spec:
   infrastructure:
     labels:
       serving.kserve.io/gateway: kserve-ingress-gateway
+    annotations:
+      gateway.envoyproxy.io/service-type: NodePort
