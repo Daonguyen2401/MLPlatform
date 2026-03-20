@@ -12,5 +12,5 @@ metadata:
 spec:
   provider:
     kubernetes:
-      service:
+      envoyService:
         type: NodePort
