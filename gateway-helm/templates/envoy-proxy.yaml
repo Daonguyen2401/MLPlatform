@@ -11,6 +11,7 @@ metadata:
     helm.sh/chart: {{ include "eg.chart" . }}
 spec:
   provider:
+    type: Kubernetes
     kubernetes:
       envoyService:
         type: NodePort
