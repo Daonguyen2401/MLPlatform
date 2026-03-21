@@ -4,6 +4,7 @@ metadata:
   name: kserve-ingress-gateway
   namespace: {{ .Release.Namespace }}
   annotations:
+    argocd.argoproj.io/tracking-id: kserve:gateway.networking.k8s.io/Gateway:{{ .Release.Namespace }}/kserve-ingress-gateway
     gateway.envoyproxy.io/service-type: NodePort
 spec:
   gatewayClassName: envoy
